@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #1e1e1e;
+  background-size: cover;
+  background-position: center;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container .head-container {
+  text-align: center;
+}
+.container .head-container .logo-mark {
+  font-size: 42px;
+  font-weight: bolder;
+  margin-bottom: 40px;
+  color: #1bd1ff;
+}
+
+.container .head-container .description {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.container .head-container .headline {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.container .event-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+}
+.container .event-container .bright {
+  color: #ecff1b;
+  font-size: 32px;
+  font-weight: 700;
+}
+.container .event-container .event-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.container .event-container .event-cards .card {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: rgb(92, 2, 147);
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.container .event-container .event-cards .card:hover {
+  outline: 3px solid #fafafa;
+}
+.container .event-container .event-cards .card .card-name {
+  position: relative;
+  bottom: -110px;
+  padding: 0 10px;
+}
