@@ -1,0 +1,163 @@
+@import url(./default.css);
+@import url(./styles.css);
+
+.container {
+  flex-direction: row;
+  padding: 80px 5%;
+  justify-content: space-between;
+  background: linear-gradient(#0e0e0e68, #0e0e0e68),
+    url(../img/casamento-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+}
+.container .divisor {
+  width: 55%;
+  display: flex;
+  align-items: first baseline;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.container .divisor h1 {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.container .divisor h1 span {
+  color: #0dd2f9;
+}
+.container .divisor h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+.container .divisor p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  max-width: 640px;
+  color: #ffffff;
+}
+.container .divisor .btn {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #283336;
+  margin: 20px 0;
+}
+/* Image container */
+.img-container {
+  position: relative;
+  width: 45%;
+  padding: 20px 10px;
+}
+
+.img-container .img-card {
+  width: 500px;
+  border: 10px solid #fafafa;
+  animation: cardAnimation 3s linear infinite;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 5%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.content h2 {
+  font-size: 44px;
+  font-weight: 600;
+  color: #0dd2f9;
+}
+.content.convites {
+  width: 100%;
+  align-items: center;
+}
+.content.convites .sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+  margin-top: 40px;
+}
+.content.convites .sobre ul {
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content.convites .sobre ul li::before {
+  content: "→";
+  font-size: 30px;
+  color: #0dd2f9;
+}
+.content.convites .sobre ul li {
+  font-size: 22px;
+}
+
+/* Cards Styles */
+.cardBox {
+  width: 100%;
+  background-color: #dfdfdf69;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+.cardBox .card {
+  width: 200px;
+  height: 200px;
+  animation: rotateAnimation 0.9s ease;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 15px 30px;
+  background: url(../img/casamento/img1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cardBox .card .card-name {
+  position: absolute;
+  bottom: -30px;
+  padding: 0 50px;
+  color: #283336;
+}
+.container .header span {
+  margin-top: -60px;
+  display: block;
+}
+
+.cardBox .card:hover {
+  animation: jumpAnimation 0.9s ease;
+  border-color: #0dd2f9;
+
+  outline: 3px solid #fafafa;
+}
+
+.cardBox .card:not(hover) {
+  animation: rotateAnimation 0.9s ease;
+}
+
+.cardBox .card:active {
+  animation: clickAnimation 0.5s ease;
+  outline: 3px solid #fafafa;
+}

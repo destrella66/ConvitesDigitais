@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Convite Digital</title>
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/test.css" />
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,51 +17,85 @@
   <body>
     <div class="container">
       <div class="head-container">
-        <h1 class="logo-mark">AnimaDate</h1>
-        <p class="description">Interativos, funcionais e originais</p>
+        <h1 class="logo-mark">HappyDate</h1>
+        <p class="description">Práticos, divertidos e modernos</p>
         <h2 class="headline">
           Convites digitais<br />
           para o seu evento
         </h2>
       </div>
       <div class="event-container">
-        <h3 class="bright">O que você vai festejar?</h3>
+        <h3 class="bright">O que vamos festejar?</h3>
+
+        <!-- Card Modelos -->
         <div class="event-cards">
-          <div class="card">
-            <img src="./src/img/mariage.svg" alt="Casamento" class="img-card" />
-            <p class="card-name">Casamento</p>
-            <span class="line"></span>
-          </div>
-          <div class="card">
-            <img
-              src="./src/img/birthday.svg"
-              alt="Aniversário"
-              class="img-card"
-            />
-            <p class="card-name">Aniversário</p>
-            <span class="line"></span>
-          </div>
-          <div class="card soon">
-            <img src="./src/img/15y.svg" alt="15 anos" class="img-card" />
+          <!-- Casamento -->
 
-            <p class="card-name">15 anos</p>
-            <span class="line"></span>
-          </div>
-          <div class="card soon">
-            <img
-              src="./src/img/university.svg"
-              alt="Formatura"
-              class="img-card"
-            />
+          <a href="./casamento.html">
+            <div class="card">
+              <img
+                src="./src/img/mariage.svg"
+                alt="Casamento"
+                class="img-card"
+              />
+              <p class="card-name">Casamento</p>
+              <span class="line"></span>
+            </div>
+          </a>
 
-            <p class="card-name">Formatura</p>
-            <span class="line"></span>
-          </div>
+          <!-- Aniversário -->
+          <a href="./aniversario.html">
+            <div class="card">
+              <img
+                src="./src/img/birthday.svg"
+                alt="Aniversário"
+                class="img-card"
+              />
+              <p class="card-name">Aniversário</p>
+              <span class="line"></span>
+            </div>
+          </a>
+
+          <!-- 15 anos -->
+          <a href="./15-anos.html">
+            <div class="card soon">
+              <img src="./src/img/15y.svg" alt="15 anos" class="img-card" />
+              <p class="card-name">15 anos</p>
+              <span class="line"></span>
+            </div>
+          </a>
+
+          <!-- Formatura -->
+          <a href="./formatura.html">
+            <div class="card soon">
+              <img
+                src="./src/img/university.svg"
+                alt="Formatura"
+                class="img-card"
+              />
+              <p class="card-name">Formatura</p>
+              <span class="line"></span>
+            </div>
+          </a>
+          <!-- Termina o container de cards -->
         </div>
       </div>
+
+      <!-- Direitos reservados: -->
       <section class="header">
-        <span>&copy; Todos os direitos reservados à AnimaDate.</span>
+        <span>&copy; Todos os direitos reservados à HappyDate.</span>
       </section>
     </div>
+
+    <!-- <div id="testCard"></div> -->
+
+    <!-- Scripts  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./src/script/script.js"></script>
   </body>
 </html>
