@@ -19,7 +19,7 @@ a {
 .container .head-container {
   text-align: center;
 }
-.container .head-container .logo-mark {
+.logo-mark {
   font-size: 60px;
   margin-bottom: 40px;
   font-family: "Rancho", sans-serif;
@@ -100,4 +100,75 @@ a {
 .container .header span {
   margin-top: -60px;
   display: block;
+}
+
+/* Form html page styles */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  min-height: 500px;
+  border-radius: 20px;
+  background-color: #fafafa;
+  color: #0e0e0e;
+  padding: 20px 30px;
+  gap: 0.5em;
+}
+.form-container .f-label {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  left: 10px;
+  color: #4dd4f6;
+  position: relative;
+}
+.form-container input {
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: #333;
+  border: 2px solid #f6e04d;
+  transition: 0.3s;
+}
+.form-container input:hover {
+  border-color: #4dd4f6;
+}
+
+.form-container .logo-mark {
+  text-align: center;
+}
+.form-container .btn {
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #4dd4f6;
+  opacity: 0.7;
+  color: #fafafa;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.form-container .btn:hover {
+  opacity: 1;
+}
+
+.form-container .btn:not(:active) {
+  opacity: 1;
+}
+
+.form-container .forgot {
+  color: #0e0e0e;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+.forgot a {
+  color: #4dd4f6;
+  font-weight: 600;
+  text-decoration: underline;
 }
