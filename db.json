@@ -1,0 +1,9 @@
+{
+  "posts": [
+    { "id": 1, "title": "Convites Digitais", "author": "HappyDate" }
+  ],
+  "comments": [
+    { "id": 1, "body": "Uma startup que tem como foco a criação de convites digitais para eventos comemorativos.", "postId": 1 }
+  ],
+  "profile": { "name": "destrella66" }
+}
