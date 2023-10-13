@@ -32,8 +32,8 @@
 
 const urlRegister = 'http://168.75.98.244:8080/auth/login';
 const requestData = {
-  login: 'daviestrella66@gmailcom',
-  password: '*********',
+    login: "login-teste@gmail.com",
+    password: "senha-teste"
 };
 
 fetch(urlRegister, {
