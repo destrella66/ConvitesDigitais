@@ -30,10 +30,10 @@
 // .catch(err => console.log(err));
 
 
-const urlRegister = 'http://168.75.98.244:8080/auth/register';
+const urlRegister = 'http://168.75.98.244:8080/auth/login';
 const requestData = {
-  login: 'daviestrella5@gmailcom',
-  password: '#123User#',
+  login: 'daviestrella66@gmailcom',
+  password: '*********',
 };
 
 fetch(urlRegister, {
@@ -41,7 +41,6 @@ fetch(urlRegister, {
   headers: {
     'Content-Type': 'application/json'
   },
-  body: JSON.stringify(requestData)
 })
 .then(response => {
   if (!response.ok) {
