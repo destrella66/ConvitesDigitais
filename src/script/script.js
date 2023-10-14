@@ -47,6 +47,7 @@ fetch(urlRegister, {
     throw new Error('Erro na solicitação');
   }
   return response.json();
+  console.log("Passou!")
 })
 .then(data => {
   console.log(data);
