@@ -16,7 +16,6 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
   ></script>
-  <script src="./src/script/script.js"></script>
 
   <!-- FontAwesome -->
   <link
@@ -54,16 +53,18 @@
       <input
       type="password"
       name="password"
-      id="userPassword"
+      id="userPasswordRep"
       placeholder="#senhadojoao"
       required
       />
-      <button class="btn" type="submit">Criar conta</button>
+      <button class="btn" type="submit" id="submitBtn">Criar conta</button>
       <div class="forgot">
         <span>Já tem uma conta?</span>
         <a href="login.html">Entrar</a>
       </div>
     </form>
   </div>
+  <script type="module" src="./src/script/registerScript.js"  ></script>
+
 </body>
 </html>
