@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+
+// Importa as fontes: 
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
+
+// Define as cores princiais. 
+$cor-primaria-site: #4dd4f6 ;
+$cor-secundaria-site: #f6e04d;
+
+*{
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+.flex{
+    display: flex;
+
+    &-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.col{
+    flex-direction: column;
+}
+
+.f-small{
+    font-size: 0.6rem;
+}
+.f-big{
+    font-size: 4rem;
+    font-weight: 700;
+}

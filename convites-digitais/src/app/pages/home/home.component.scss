@@ -1,0 +1,85 @@
+// Define as cores princiais. 
+$cor-primaria-site: #4dd4f6;
+$cor-secundaria-site: #f6e04d;
+$branco: #fafafa;
+
+@import url(../../../animation.scss);
+
+:host {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 2.5% 10%;
+
+    background: linear-gradient(#000000b0, #00000067),
+        url(./images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+
+    .logo {
+        color: $cor-primaria-site;
+        margin-bottom: 0.5rem;
+        font-family: "Rancho", sans-serif;
+    }
+
+    p {
+        font-size: 1.3rem;
+        color: $branco;
+        margin-bottom: 2rem;
+
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $branco;
+        line-height: 3.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.cards {
+    h3 {
+        font-size: 2rem;
+        color: $cor-secundaria-site;
+        font-weight: 700;
+        margin-bottom: 2rem;
+
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+
+        .icon {
+            color: $cor-primaria-site;
+            font-size: 1.5rem;
+        }
+    }
+
+    .card {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin: 10px 10px 60px;
+        background-color: $branco;
+        transition: 0.3s;
+        border-radius: 8px;
+
+        :hover {
+            animation: jumpAnimation 0.9s ease;
+            outline: 3px solid #fafafa;
+        }
+
+    }
+
+    .card:not(:hover) {
+        animation: rotateAnimation 0.9s ease;
+    }
+}
