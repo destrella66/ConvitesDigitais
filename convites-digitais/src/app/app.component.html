@@ -1,1 +1,53 @@
-<app-home></app-home>
+<app-home>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | HappyDate</title>
+
+  <!-- Styles -->
+  <!-- Script -->
+  <script type="module" src="./src/script/loginScript.js" defer></script>
+
+  <!-- FontAwesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div class="container">
+    <form class="form-container">
+      <h1 class="logo-mark">HappyDate</h1>
+      <label for="email" class="f-label">Digite o seu e-mail: </label>
+      <input
+      type="email"
+      name="email"
+      id="userEmail"
+      placeholder="joao@gmail.com"
+      required
+      />
+      <label for="email" class="f-label">Digite sua senha: </label>
+
+      <input
+      type="password"
+      name="password"
+      id="userPassword"
+      placeholder="#senhadojoao"
+      required
+      />
+      <button class="btn" type="submit" id="submitBtn">Entrar</button>
+      <div class="forgot">
+        <span>Não tem uma conta?</span>
+        <a href="nova-conta.html">Criar conta</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+</app-home>

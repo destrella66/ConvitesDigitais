@@ -8,10 +8,11 @@ $branco: #fafafa;
 :host {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
     width: 100vw;
     height: 100vh;
-    padding: 2.5% 10%;
+    padding: 2.5% 8%;
 
     background: linear-gradient(#000000b0, #00000067),
         url(./images/background.jpg) no-repeat;
@@ -20,6 +21,7 @@ $branco: #fafafa;
 }
 
 .header {
+    width: 40vw;
 
     .logo {
         color: $cor-primaria-site;
@@ -41,9 +43,36 @@ $branco: #fafafa;
         line-height: 3.5rem;
         margin-bottom: 2rem;
     }
+
+    .btn-box {
+
+        .btn {
+            color: #fafafa;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: 0.3s;
+
+        }
+
+        .btn:hover {
+            background-color: #fafafa;
+            color: #4dd4f6;
+            border: none;
+            padding: 12px 36px;
+        }
+
+        .btn:active {
+            transform: scale(0.7);
+        }
+
+    }
 }
 
 .cards {
+    flex-wrap: wrap;
+    max-width: 40vw;
+    gap: 1rem;
+
     h3 {
         font-size: 2rem;
         color: $cor-secundaria-site;
@@ -55,7 +84,7 @@ $branco: #fafafa;
     a {
         display: flex;
         flex-direction: column;
-        padding: 0 30px;
+        padding: 20px;
 
         .icon {
             color: $cor-primaria-site;
@@ -67,7 +96,6 @@ $branco: #fafafa;
         width: 100px;
         height: 100px;
         position: relative;
-        margin: 10px 10px 60px;
         background-color: $branco;
         transition: 0.3s;
         border-radius: 8px;

@@ -1,37 +1,48 @@
-
 // Importa as fontes: 
 @import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
 
 // Define as cores princiais. 
-$cor-primaria-site: #4dd4f6 ;
+$cor-primaria-site: #4dd4f6;
 $cor-secundaria-site: #f6e04d;
 
-*{
+* {
     border: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
-.flex{
+.flex {
     display: flex;
 
-    &-center{
+    &-center {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 }
-.col{
+
+.col {
     flex-direction: column;
 }
 
-.f-small{
+.f-small {
     font-size: 0.6rem;
 }
-.f-big{
+
+.f-big {
     font-size: 4rem;
     font-weight: 700;
+}
+
+.btn {
+    padding: 12px 28px;
+    border: #4dd4f6 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 5px 10px;
+    font-weight: 500;
 }
